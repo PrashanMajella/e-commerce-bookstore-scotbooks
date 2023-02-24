@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .py-navbar-item {
+    @apply py-4
+  }
+
+  .px-navbar-item {
+    @apply px-5
+  }
+
+  .btn-primary {
+    @apply py-2 px-3 rounded text-white bg-pink-600 hover:bg-pink-700 active:bg-pink-800 transition-colors shadow-md
+  }
+
+  .btn-sky {
+    @apply py-2 px-3 rounded text-white bg-sky-500 hover:bg-sky-600 active:bg-sky-700 transition-colors shadow-md
+  }
+
+  .btn-gray {
+    @apply py-2 px-3 rounded text-white bg-gray-600 hover:bg-gray-700 active:bg-gray-800 transition-colors shadow-md
+  }
+
+  .wysiwyg-content {
+    @apply text-gray-600
+  }
+
+  .wysiwyg-content table td {
+    @apply px-2 py-1
+  }
+
+  .wysiwyg-content table td:first-child {
+    @apply font-bold
+  }
+
+  .wysiwyg-content h3, h4, h5 {
+    @apply mt-4 font-bold
+  }
+
+  a.primary {
+    @apply text-pink-600
+  }
+
+  a:hover.primary {
+    @apply text-pink-500
+  }
+
+  input[type=text],
+  input[type=number],
+  input[type=email],
+  input[type=password],
+  select,
+  textarea {
+    @apply border-gray-300 focus:ring-0 focus:ring-pink-500 focus:border-pink-500 rounded bg-gray-200 text-gray-600 p-2
+  }
+
+  input[type=checkbox] {
+    @apply rounded m-1
+  }
+
+  input[type=checkbox].primary {
+    @apply rounded m-1 focus:ring-pink-500 checked:bg-pink-500 checked:focus:bg-pink-500 checked:hover:bg-pink-500
+  }
+
+  a, button {
+    @apply cursor-pointer
+  }
+}
